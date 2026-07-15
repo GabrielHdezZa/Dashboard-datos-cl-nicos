@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function fetchData() {
-    fetch('data.json?t=' + new Date().getTime()) // Prevent caching
+    fetch('/api/data?t=' + new Date().getTime()) // Prevent caching
         .then(response => {
             if (!response.ok) throw new Error("Not OK");
             return response.json();

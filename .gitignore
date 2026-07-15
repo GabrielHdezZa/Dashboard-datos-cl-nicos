@@ -1,7 +1,24 @@
-*
-!Dashboard/
-!Dashboard/**
-!Dataset_Clinico_Crudo_Errores.xlsx
-!Dataset_Clinico_Limpio.xlsx
-!.gitignore
-!README.md
+# Archivos temporales y de sistema
+__pycache__/
+*.pyc
+*.pyo
+.env
+.vercel
+
+# Archivos de datos locales que no son necesarios en producción
+Dashboard/
+debug.py
+server.py
+data.json
+
+# Otros datasets que no forman parte del proyecto del Dashboard
+01_redes_sociales_engagement.xlsx
+02_ventas_ecommerce.xlsx
+03_crm_banca_clientes.xlsx
+04_alumnado_lms_moodle.xlsx
+05_campanas_whatsapp_email.xlsx
+06_tickets_supermercado.xlsx
+07_rrhh_absentismo.xlsx
+08_trafico_web_analytics.xlsx
+09_clientes_scoring_credito.xlsx
+10_encuesta_satisfaccion.xlsx
